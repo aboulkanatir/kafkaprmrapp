@@ -1,0 +1,6 @@
+spring.kafka.producer.batch-size=10 
+
+spring.kafka.producer.client-id=my-id
+
+
+spring.kafka.consumer.group-id="default-spring-consumer"

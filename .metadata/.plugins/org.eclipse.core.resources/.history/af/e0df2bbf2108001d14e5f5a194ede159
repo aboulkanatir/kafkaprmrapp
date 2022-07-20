@@ -1,0 +1,5 @@
+package com.cours.kafkaconsumer.producer;
+
+public class HelloKafkaProduer {
+
+}

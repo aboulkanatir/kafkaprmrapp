@@ -1,0 +1,21 @@
+package com.cours.kafkaconsumer.producer;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.kafka.core.KafkaTemplate;
+
+public class HelloKafkaProduer {
+	
+	
+	@Autowired
+	private KafkaTemplate<String, String>  kafkaTemplate ; 
+	
+	
+	public void sendHello(String name) {
+		kafkaTemplate.send("t_hello", "Hello" + name) ; 
+		
+	}
+	
+	
+	
+
+}

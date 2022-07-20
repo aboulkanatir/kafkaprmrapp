@@ -1,0 +1,18 @@
+package com.cours.kafkaconsumer.producer;
+
+import org.springframework.kafka.core.KafkaTemplate;
+
+public class HelloKafkaProduer {
+	
+	private KafkaTemplate<String, String>  kafkaTemplate ; 
+	
+	
+	public void sendHello(String name) {
+		kafkaTemplate.send("t_hello", "Hello" + name) ; 
+		
+	}
+	
+	
+	
+
+}
