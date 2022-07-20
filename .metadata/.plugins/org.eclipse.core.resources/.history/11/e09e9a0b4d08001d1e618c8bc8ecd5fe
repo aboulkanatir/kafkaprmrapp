@@ -1,0 +1,5 @@
+package com.cours.kafkaconsumer.consumer;
+
+public class FixedRateConsumer {
+
+}
